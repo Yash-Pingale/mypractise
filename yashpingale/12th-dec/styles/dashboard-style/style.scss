@@ -1,0 +1,265 @@
+@import "../contact";
+@import "../footer";
+@import "../divider";
+@import "./small-screen";
+@import "../font";
+
+html,body{
+    margin:0;
+    background: #EEEEEE;
+    font-family: Quicksand-VariableFont;
+}
+
+#hero{
+    display: flex;
+    height: 56px;
+    background-image: url("\\quantum-screen-assets\\header-pattern-image.png");
+    justify-content: space-between;
+    .quantum-logo{
+        padding-left: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .menu{
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+        margin-top: 11px;
+    }
+    ul{
+        display: flex;
+        list-style-type: none;
+        margin: 0;
+        color: #3FD28B;
+        li{
+            padding:8px;
+            p{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin:0;
+                width: 10px;
+                height: 10px;
+                background-color: #2A7FF3;
+                padding: 5px;
+                border-radius: 50%;
+                color: #FFFFFF;
+                position: relative;
+                left: -10px;
+                bottom:10px;
+            }
+        }
+        li:first-child{
+            color: #FFFFFF;
+            border-bottom: 3px solid #FFFFFF;
+        }
+        .hidden{
+            display: flex;
+            align-items: center;
+        }
+        #notifications, #announcements{
+            display: flex;
+            align-items: flex-start;
+        }
+    }
+    .hamburger{
+        display: none;
+    }
+}
+
+.container{
+    width:975px;
+    display: block;
+    margin: 35px auto 0px auto;
+}
+
+.top-toggle{
+    display:flex;
+    justify-content: space-around;
+    background-color: #8DDC97;
+    .toggle-titles{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        border-bottom: 2px;
+        .title{
+            display: block;
+            margin:auto 0px auto 0px;
+        }
+        .available-number{
+            font-size: x-large;
+            font-weight: 900;
+        }
+        img{
+            width: 40px;
+        }
+    }
+    .toggle-titles>*{
+        padding: 4px;
+        text-transform: capitalize;
+        font-weight: medium;
+    }
+    #courses{
+        border-bottom: 4px solid #222222;
+    }
+}
+
+.page-detail{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(0, 0, 0, .12);
+    .subtitle{
+        display: flex;
+        align-items: flex-end;
+        color: #686868;
+    }
+    .sort{
+        display:flex;
+        *{
+            padding: 5px;
+            margin-bottom: 15px;
+        }
+        img{
+            margin-bottom: 0;
+            padding-left: 25px;
+        }
+    }
+    .sort-search{
+        display: flex;
+        padding: 0;
+        border-bottom: 1px solid rgba(0, 0, 0, .12);
+        img{
+            width: 25px;
+            height: 25px;
+            margin-top: 20px;
+        }
+        p{
+            display: flex;
+            padding-right: 50px;
+            margin:0px 0px 0px 2px;
+            align-items: flex-end;
+        }
+    }
+}
+
+.card{
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: 5fr 5fr;
+    grid-template-rows: 5fr 5fr;
+    margin-top: 20px;
+    .acceleration, .dvs, .biology, .mathematics{
+        background-color: #FFFFFF;
+        padding: 20px 20px 0px 20px ;
+        .upper{
+            width:100%;
+            display: flex;
+            border-bottom: 1px solid rgba(0, 0, 0, .12);
+            padding-bottom: 15px;
+            .course-image{
+                width: 132px;
+            }
+            .down-arrow{
+                float: right;
+            }
+            .info{
+                padding-left: 20px;
+                color:#666666;
+                font-size: 12px;
+                
+                .topic{
+                    color: #222222;
+                    font-size: large;
+                }
+                .professor,.all-classes{
+                    width: 100%;
+                    font-weight: bold;
+                    font-size: 16px;
+                    color: black;
+                    border-bottom: 1px solid rgba(0, 0, 0, 0.32);
+                }
+                .no-classes{
+                    width: 100%;
+                    font-weight: bold;
+                    font-size: 16px;
+                    border-bottom: 1px solid rgba(0, 0, 0, 0.32);
+                    color: rgba(0, 0, 0, .4);
+                }
+                .bold{
+                    color: black;
+                    font-weight: bold;
+                }
+                .subject-grade, .index, .student-date{
+                    color:#666666;
+                    font-size: 12px;
+                }
+                .subject-grade{
+                    .highlight{
+                        color:#1F7A54;
+                    }
+                }
+                .index{
+                    span{
+                        padding: 0px 3px;
+                    }
+                }
+            }
+        }
+        .divider{
+            display: inline;
+        }
+        .manage-course{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 10px;
+            p{
+                margin-bottom: 0;
+                img{
+                    padding: 0px 25px 0px 25px;
+                }
+            }
+            .disable{
+                opacity: 40%;
+            }
+        }
+    }
+    p{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .topic{
+        display:flex;
+        font-weight: medium;
+    } 
+    .down-arrow{
+        float: right;
+    }    
+}
+
+@media screen and (min-width: 0px) and (max-width: 768px){
+    #hero{
+        width:100%;
+    }
+    .hidden{
+        display: none;
+    }
+    .hamburger{
+        display: flex;
+    }
+
+    .container{
+        width: 100%;
+    }
+    .top-toggle{
+        margin: auto 25px auto 25px;
+    }
+    .page-detail{
+        margin: auto 25px auto 25px;
+    }
+    .card{
+        width: 70%;
+        padding: 0px 100px 0px 100px;
+        grid-template-columns: 10fr;
+        grid-template-rows: 10fr 10fr 10fr 10fr;
+    }
+}

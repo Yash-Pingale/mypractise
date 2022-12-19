@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+.avatar{
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    float: left;
+    margin-top: 4px;
+    margin-left: 4px;
+    margin-bottom: 4px;
+    margin-right: 4px;
+}
+.handle{
+    font-weight: 700;
+    font-family: "Roboto";
+    font-size: 20px;
+    color: #000000;
+
+}
+.content{
+    font-family: "Roboto";
+    font-size: 20px;
+    color: #000000;
+    font-weight: 400;
+    margin-top: 14px;
+    margin-bottom: 24px;
+}
+.interact{
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+}
+.icons{
+ display: flex;
+}
+.number{
+    padding: 0%;
+    margin-right: 24px;
+    margin-left: 14px;
+    margin-top: 0%;
+    font-weight: 500;
+    font-size: 15px;
+    color: #858991;     
+}
+.tweet{
+    display: block;
+    margin-left: 148px;
+    margin-right: 4px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+body{
+    border: 1px solid #000000;
+    width: 457px;
+    height: 138px;
+    object-fit: cover;
+    margin-top: 4px;
+    margin-left: 4px;
+    margin-bottom: 4px;
+    margin-right: 4px;
+}
+p.handle{
+    margin-top: 10px;
+    margin-bottom: 0;
+    padding: 0;
+}
