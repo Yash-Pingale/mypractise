@@ -1,3 +1,3 @@
 Initial changes
 practising git
-change
+changes
